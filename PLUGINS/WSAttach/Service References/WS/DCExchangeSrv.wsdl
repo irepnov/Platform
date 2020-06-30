@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://main.dce/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="DCExchangeSrv" targetNamespace="http://main.dce/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://10.20.29.2:8888/EchangeServerTFOMS/DCExchangeSrv?xsd=1" namespace="http://main.dce/" />
+    </xsd:schema>
+  </types>
+  <message name="MakeAttachAction">
+    <part name="parameters" element="tns:MakeAttachAction" />
+  </message>
+  <message name="MakeAttachActionResponse">
+    <part name="parameters" element="tns:MakeAttachActionResponse" />
+  </message>
+  <message name="getEvFactInfos">
+    <part name="parameters" element="tns:getEvFactInfos" />
+  </message>
+  <message name="getEvFactInfosResponse">
+    <part name="parameters" element="tns:getEvFactInfosResponse" />
+  </message>
+  <message name="getEvFactExecs">
+    <part name="parameters" element="tns:getEvFactExecs" />
+  </message>
+  <message name="getEvFactExecsResponse">
+    <part name="parameters" element="tns:getEvFactExecsResponse" />
+  </message>
+  <message name="getEvPlanQtys">
+    <part name="parameters" element="tns:getEvPlanQtys" />
+  </message>
+  <message name="getEvPlanQtysResponse">
+    <part name="parameters" element="tns:getEvPlanQtysResponse" />
+  </message>
+  <message name="getEvFactInvcs">
+    <part name="parameters" element="tns:getEvFactInvcs" />
+  </message>
+  <message name="getEvFactInvcsResponse">
+    <part name="parameters" element="tns:getEvFactInvcsResponse" />
+  </message>
+  <message name="putEvContacts">
+    <part name="parameters" element="tns:putEvContacts" />
+  </message>
+  <message name="putEvContactsResponse">
+    <part name="parameters" element="tns:putEvContactsResponse" />
+  </message>
+  <message name="putEvPlanDates">
+    <part name="parameters" element="tns:putEvPlanDates" />
+  </message>
+  <message name="putEvPlanDatesResponse">
+    <part name="parameters" element="tns:putEvPlanDatesResponse" />
+  </message>
+  <message name="SetLoginAccess">
+    <part name="parameters" element="tns:SetLoginAccess" />
+  </message>
+  <message name="SetLoginAccessResponse">
+    <part name="parameters" element="tns:SetLoginAccessResponse" />
+  </message>
+  <message name="MakeTestConnect">
+    <part name="parameters" element="tns:MakeTestConnect" />
+  </message>
+  <message name="MakeTestConnectResponse">
+    <part name="parameters" element="tns:MakeTestConnectResponse" />
+  </message>
+  <message name="GetKDInformation">
+    <part name="parameters" element="tns:GetKDInformation" />
+  </message>
+  <message name="GetKDInformationResponse">
+    <part name="parameters" element="tns:GetKDInformationResponse" />
+  </message>
+  <message name="SendOrdersLeave">
+    <part name="parameters" element="tns:SendOrdersLeave" />
+  </message>
+  <message name="SendOrdersLeaveResponse">
+    <part name="parameters" element="tns:SendOrdersLeaveResponse" />
+  </message>
+  <message name="getEvContacts">
+    <part name="parameters" element="tns:getEvContacts" />
+  </message>
+  <message name="getEvContactsResponse">
+    <part name="parameters" element="tns:getEvContactsResponse" />
+  </message>
+  <message name="getEvPlanList">
+    <part name="parameters" element="tns:getEvPlanList" />
+  </message>
+  <message name="getEvPlanListResponse">
+    <part name="parameters" element="tns:getEvPlanListResponse" />
+  </message>
+  <message name="getEvPlanDates">
+    <part name="parameters" element="tns:getEvPlanDates" />
+  </message>
+  <message name="getEvPlanDatesResponse">
+    <part name="parameters" element="tns:getEvPlanDatesResponse" />
+  </message>
+  <message name="putEvPlanList">
+    <part name="parameters" element="tns:putEvPlanList" />
+  </message>
+  <message name="putEvPlanListResponse">
+    <part name="parameters" element="tns:putEvPlanListResponse" />
+  </message>
+  <message name="putEvFactExecs">
+    <part name="parameters" element="tns:putEvFactExecs" />
+  </message>
+  <message name="putEvFactExecsResponse">
+    <part name="parameters" element="tns:putEvFactExecsResponse" />
+  </message>
+  <message name="putEvFactInfos">
+    <part name="parameters" element="tns:putEvFactInfos" />
+  </message>
+  <message name="putEvFactInfosResponse">
+    <part name="parameters" element="tns:putEvFactInfosResponse" />
+  </message>
+  <message name="GetKDInformationByKpk">
+    <part name="parameters" element="tns:GetKDInformationByKpk" />
+  </message>
+  <message name="GetKDInformationByKpkResponse">
+    <part name="parameters" element="tns:GetKDInformationByKpkResponse" />
+  </message>
+  <message name="SendPlanOrdersClinic">
+    <part name="parameters" element="tns:SendPlanOrdersClinic" />
+  </message>
+  <message name="SendPlanOrdersClinicResponse">
+    <part name="parameters" element="tns:SendPlanOrdersClinicResponse" />
+  </message>
+  <message name="GetFactOrdersHospital">
+    <part name="parameters" element="tns:GetFactOrdersHospital" />
+  </message>
+  <message name="GetFactOrdersHospitalResponse">
+    <part name="parameters" element="tns:GetFactOrdersHospitalResponse" />
+  </message>
+  <message name="GetOrdersHospitalUrgentlyLDS">
+    <part name="parameters" element="tns:GetOrdersHospitalUrgentlyLDS" />
+  </message>
+  <message name="GetOrdersHospitalUrgentlyLDSResponse">
+    <part name="parameters" element="tns:GetOrdersHospitalUrgentlyLDSResponse" />
+  </message>
+  <message name="GetFactOrdersHospitalLDS">
+    <part name="parameters" element="tns:GetFactOrdersHospitalLDS" />
+  </message>
+  <message name="GetFactOrdersHospitalLDSResponse">
+    <part name="parameters" element="tns:GetFactOrdersHospitalLDSResponse" />
+  </message>
+  <message name="SendFactOrdersHospital">
+    <part name="parameters" element="tns:SendFactOrdersHospital" />
+  </message>
+  <message name="SendFactOrdersHospitalResponse">
+    <part name="parameters" element="tns:SendFactOrdersHospitalResponse" />
+  </message>
+  <message name="SendOrdersNullification">
+    <part name="parameters" element="tns:SendOrdersNullification" />
+  </message>
+  <message name="SendOrdersNullificationResponse">
+    <part name="parameters" element="tns:SendOrdersNullificationResponse" />
+  </message>
+  <message name="SendAttachDoctorInformation">
+    <part name="parameters" element="tns:SendAttachDoctorInformation" />
+  </message>
+  <message name="SendAttachDoctorInformationResponse">
+    <part name="parameters" element="tns:SendAttachDoctorInformationResponse" />
+  </message>
+  <message name="GetKDInformationLDS">
+    <part name="parameters" element="tns:GetKDInformationLDS" />
+  </message>
+  <message name="GetKDInformationLDSResponse">
+    <part name="parameters" element="tns:GetKDInformationLDSResponse" />
+  </message>
+  <message name="GetPlanOrdersClinicPDG">
+    <part name="parameters" element="tns:GetPlanOrdersClinicPDG" />
+  </message>
+  <message name="GetPlanOrdersClinicPDGResponse">
+    <part name="parameters" element="tns:GetPlanOrdersClinicPDGResponse" />
+  </message>
+  <message name="MakeDeAttachAction">
+    <part name="parameters" element="tns:MakeDeAttachAction" />
+  </message>
+  <message name="MakeDeAttachActionResponse">
+    <part name="parameters" element="tns:MakeDeAttachActionResponse" />
+  </message>
+  <message name="GetOrdersLeaveHospitalPDG">
+    <part name="parameters" element="tns:GetOrdersLeaveHospitalPDG" />
+  </message>
+  <message name="GetOrdersLeaveHospitalPDGResponse">
+    <part name="parameters" element="tns:GetOrdersLeaveHospitalPDGResponse" />
+  </message>
+  <message name="SendOrdersHospitalUrgently">
+    <part name="parameters" element="tns:SendOrdersHospitalUrgently" />
+  </message>
+  <message name="SendOrdersHospitalUrgentlyResponse">
+    <part name="parameters" element="tns:SendOrdersHospitalUrgentlyResponse" />
+  </message>
+  <message name="MakeDeAttachActionCancel">
+    <part name="parameters" element="tns:MakeDeAttachActionCancel" />
+  </message>
+  <message name="MakeDeAttachActionCancelResponse">
+    <part name="parameters" element="tns:MakeDeAttachActionCancelResponse" />
+  </message>
+  <message name="GetPlanOrdersClinicLDS">
+    <part name="parameters" element="tns:GetPlanOrdersClinicLDS" />
+  </message>
+  <message name="GetPlanOrdersClinicLDSResponse">
+    <part name="parameters" element="tns:GetPlanOrdersClinicLDSResponse" />
+  </message>
+  <message name="SendKDInformation">
+    <part name="parameters" element="tns:SendKDInformation" />
+  </message>
+  <message name="SendKDInformationResponse">
+    <part name="parameters" element="tns:SendKDInformationResponse" />
+  </message>
+  <message name="GetKDInformationByMO">
+    <part name="parameters" element="tns:GetKDInformationByMO" />
+  </message>
+  <message name="GetKDInformationByMOResponse">
+    <part name="parameters" element="tns:GetKDInformationByMOResponse" />
+  </message>
+  <message name="GetQueryForDeAttachForMO">
+    <part name="parameters" element="tns:GetQueryForDeAttachForMO" />
+  </message>
+  <message name="GetQueryForDeAttachForMOResponse">
+    <part name="parameters" element="tns:GetQueryForDeAttachForMOResponse" />
+  </message>
+  <message name="GetOrdersLeaveHospitalLDS">
+    <part name="parameters" element="tns:GetOrdersLeaveHospitalLDS" />
+  </message>
+  <message name="GetOrdersLeaveHospitalLDSResponse">
+    <part name="parameters" element="tns:GetOrdersLeaveHospitalLDSResponse" />
+  </message>
+  <message name="GetAttachListByRangeAct">
+    <part name="parameters" element="tns:GetAttachListByRangeAct" />
+  </message>
+  <message name="GetAttachListByRangeActResponse">
+    <part name="parameters" element="tns:GetAttachListByRangeActResponse" />
+  </message>
+  <message name="GetAttachListByRangeDead">
+    <part name="parameters" element="tns:GetAttachListByRangeDead" />
+  </message>
+  <message name="GetAttachListByRangeDeadResponse">
+    <part name="parameters" element="tns:GetAttachListByRangeDeadResponse" />
+  </message>
+  <message name="SendAttachMoStreetSection">
+    <part name="parameters" element="tns:SendAttachMoStreetSection" />
+  </message>
+  <message name="SendAttachMoStreetSectionResponse">
+    <part name="parameters" element="tns:SendAttachMoStreetSectionResponse" />
+  </message>
+  <message name="GetPlanOrdersClinic">
+    <part name="parameters" element="tns:GetPlanOrdersClinic" />
+  </message>
+  <message name="GetPlanOrdersClinicResponse">
+    <part name="parameters" element="tns:GetPlanOrdersClinicResponse" />
+  </message>
+  <message name="GetOrdersHospitalUrgently">
+    <part name="parameters" element="tns:GetOrdersHospitalUrgently" />
+  </message>
+  <message name="GetOrdersHospitalUrgentlyResponse">
+    <part name="parameters" element="tns:GetOrdersHospitalUrgentlyResponse" />
+  </message>
+  <message name="GetKDInformationPDG">
+    <part name="parameters" element="tns:GetKDInformationPDG" />
+  </message>
+  <message name="GetKDInformationPDGResponse">
+    <part name="parameters" element="tns:GetKDInformationPDGResponse" />
+  </message>
+  <message name="GetOrdersHospitalUrgentlyPDG">
+    <part name="parameters" element="tns:GetOrdersHospitalUrgentlyPDG" />
+  </message>
+  <message name="GetOrdersHospitalUrgentlyPDGResponse">
+    <part name="parameters" element="tns:GetOrdersHospitalUrgentlyPDGResponse" />
+  </message>
+  <message name="GetAttachInformation">
+    <part name="parameters" element="tns:GetAttachInformation" />
+  </message>
+  <message name="GetAttachInformationResponse">
+    <part name="parameters" element="tns:GetAttachInformationResponse" />
+  </message>
+  <message name="GetFactOrdersHospitalPDG">
+    <part name="parameters" element="tns:GetFactOrdersHospitalPDG" />
+  </message>
+  <message name="GetFactOrdersHospitalPDGResponse">
+    <part name="parameters" element="tns:GetFactOrdersHospitalPDGResponse" />
+  </message>
+  <message name="GetAttachMoStreetSection">
+    <part name="parameters" element="tns:GetAttachMoStreetSection" />
+  </message>
+  <message name="GetAttachMoStreetSectionResponse">
+    <part name="parameters" element="tns:GetAttachMoStreetSectionResponse" />
+  </message>
+  <message name="GetOrdersNullificationPDG">
+    <part name="parameters" element="tns:GetOrdersNullificationPDG" />
+  </message>
+  <message name="GetOrdersNullificationPDGResponse">
+    <part name="parameters" element="tns:GetOrdersNullificationPDGResponse" />
+  </message>
+  <message name="GetDeAttachByDate">
+    <part name="parameters" element="tns:GetDeAttachByDate" />
+  </message>
+  <message name="GetDeAttachByDateResponse">
+    <part name="parameters" element="tns:GetDeAttachByDateResponse" />
+  </message>
+  <message name="GetOrdersLeaveHospital">
+    <part name="parameters" element="tns:GetOrdersLeaveHospital" />
+  </message>
+  <message name="GetOrdersLeaveHospitalResponse">
+    <part name="parameters" element="tns:GetOrdersLeaveHospitalResponse" />
+  </message>
+  <message name="GetKDInformationByKPKMO">
+    <part name="parameters" element="tns:GetKDInformationByKPKMO" />
+  </message>
+  <message name="GetKDInformationByKPKMOResponse">
+    <part name="parameters" element="tns:GetKDInformationByKPKMOResponse" />
+  </message>
+  <message name="GetOrdersNullificationLDS">
+    <part name="parameters" element="tns:GetOrdersNullificationLDS" />
+  </message>
+  <message name="GetOrdersNullificationLDSResponse">
+    <part name="parameters" element="tns:GetOrdersNullificationLDSResponse" />
+  </message>
+  <message name="GetOrdersNullification">
+    <part name="parameters" element="tns:GetOrdersNullification" />
+  </message>
+  <message name="GetOrdersNullificationResponse">
+    <part name="parameters" element="tns:GetOrdersNullificationResponse" />
+  </message>
+  <message name="SendQueryForDeAttachForMO">
+    <part name="parameters" element="tns:SendQueryForDeAttachForMO" />
+  </message>
+  <message name="SendQueryForDeAttachForMOResponse">
+    <part name="parameters" element="tns:SendQueryForDeAttachForMOResponse" />
+  </message>
+  <message name="GetAttachListByRange">
+    <part name="parameters" element="tns:GetAttachListByRange" />
+  </message>
+  <message name="GetAttachListByRangeResponse">
+    <part name="parameters" element="tns:GetAttachListByRangeResponse" />
+  </message>
+  <message name="SendAttachDoctorSectionInformation">
+    <part name="parameters" element="tns:SendAttachDoctorSectionInformation" />
+  </message>
+  <message name="SendAttachDoctorSectionInformationResponse">
+    <part name="parameters" element="tns:SendAttachDoctorSectionInformationResponse" />
+  </message>
+  <portType name="DCExchangeSrv">
+    <operation name="MakeAttachAction">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/MakeAttachActionRequest" message="tns:MakeAttachAction" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/MakeAttachActionResponse" message="tns:MakeAttachActionResponse" />
+    </operation>
+    <operation name="getEvFactInfos">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/getEvFactInfosRequest" message="tns:getEvFactInfos" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/getEvFactInfosResponse" message="tns:getEvFactInfosResponse" />
+    </operation>
+    <operation name="getEvFactExecs">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/getEvFactExecsRequest" message="tns:getEvFactExecs" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/getEvFactExecsResponse" message="tns:getEvFactExecsResponse" />
+    </operation>
+    <operation name="getEvPlanQtys">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/getEvPlanQtysRequest" message="tns:getEvPlanQtys" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/getEvPlanQtysResponse" message="tns:getEvPlanQtysResponse" />
+    </operation>
+    <operation name="getEvFactInvcs">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/getEvFactInvcsRequest" message="tns:getEvFactInvcs" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/getEvFactInvcsResponse" message="tns:getEvFactInvcsResponse" />
+    </operation>
+    <operation name="putEvContacts">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/putEvContactsRequest" message="tns:putEvContacts" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/putEvContactsResponse" message="tns:putEvContactsResponse" />
+    </operation>
+    <operation name="putEvPlanDates">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/putEvPlanDatesRequest" message="tns:putEvPlanDates" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/putEvPlanDatesResponse" message="tns:putEvPlanDatesResponse" />
+    </operation>
+    <operation name="SetLoginAccess">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SetLoginAccessRequest" message="tns:SetLoginAccess" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SetLoginAccessResponse" message="tns:SetLoginAccessResponse" />
+    </operation>
+    <operation name="MakeTestConnect">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/MakeTestConnectRequest" message="tns:MakeTestConnect" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/MakeTestConnectResponse" message="tns:MakeTestConnectResponse" />
+    </operation>
+    <operation name="GetKDInformation">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationRequest" message="tns:GetKDInformation" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationResponse" message="tns:GetKDInformationResponse" />
+    </operation>
+    <operation name="SendOrdersLeave">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendOrdersLeaveRequest" message="tns:SendOrdersLeave" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendOrdersLeaveResponse" message="tns:SendOrdersLeaveResponse" />
+    </operation>
+    <operation name="getEvContacts">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/getEvContactsRequest" message="tns:getEvContacts" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/getEvContactsResponse" message="tns:getEvContactsResponse" />
+    </operation>
+    <operation name="getEvPlanList">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/getEvPlanListRequest" message="tns:getEvPlanList" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/getEvPlanListResponse" message="tns:getEvPlanListResponse" />
+    </operation>
+    <operation name="getEvPlanDates">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/getEvPlanDatesRequest" message="tns:getEvPlanDates" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/getEvPlanDatesResponse" message="tns:getEvPlanDatesResponse" />
+    </operation>
+    <operation name="putEvPlanList">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/putEvPlanListRequest" message="tns:putEvPlanList" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/putEvPlanListResponse" message="tns:putEvPlanListResponse" />
+    </operation>
+    <operation name="putEvFactExecs">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/putEvFactExecsRequest" message="tns:putEvFactExecs" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/putEvFactExecsResponse" message="tns:putEvFactExecsResponse" />
+    </operation>
+    <operation name="putEvFactInfos">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/putEvFactInfosRequest" message="tns:putEvFactInfos" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/putEvFactInfosResponse" message="tns:putEvFactInfosResponse" />
+    </operation>
+    <operation name="GetKDInformationByKpk">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationByKpkRequest" message="tns:GetKDInformationByKpk" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationByKpkResponse" message="tns:GetKDInformationByKpkResponse" />
+    </operation>
+    <operation name="SendPlanOrdersClinic">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendPlanOrdersClinicRequest" message="tns:SendPlanOrdersClinic" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendPlanOrdersClinicResponse" message="tns:SendPlanOrdersClinicResponse" />
+    </operation>
+    <operation name="GetFactOrdersHospital">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetFactOrdersHospitalRequest" message="tns:GetFactOrdersHospital" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetFactOrdersHospitalResponse" message="tns:GetFactOrdersHospitalResponse" />
+    </operation>
+    <operation name="GetOrdersHospitalUrgentlyLDS">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersHospitalUrgentlyLDSRequest" message="tns:GetOrdersHospitalUrgentlyLDS" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersHospitalUrgentlyLDSResponse" message="tns:GetOrdersHospitalUrgentlyLDSResponse" />
+    </operation>
+    <operation name="GetFactOrdersHospitalLDS">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetFactOrdersHospitalLDSRequest" message="tns:GetFactOrdersHospitalLDS" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetFactOrdersHospitalLDSResponse" message="tns:GetFactOrdersHospitalLDSResponse" />
+    </operation>
+    <operation name="SendFactOrdersHospital">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendFactOrdersHospitalRequest" message="tns:SendFactOrdersHospital" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendFactOrdersHospitalResponse" message="tns:SendFactOrdersHospitalResponse" />
+    </operation>
+    <operation name="SendOrdersNullification">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendOrdersNullificationRequest" message="tns:SendOrdersNullification" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendOrdersNullificationResponse" message="tns:SendOrdersNullificationResponse" />
+    </operation>
+    <operation name="SendAttachDoctorInformation">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendAttachDoctorInformationRequest" message="tns:SendAttachDoctorInformation" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendAttachDoctorInformationResponse" message="tns:SendAttachDoctorInformationResponse" />
+    </operation>
+    <operation name="GetKDInformationLDS">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationLDSRequest" message="tns:GetKDInformationLDS" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationLDSResponse" message="tns:GetKDInformationLDSResponse" />
+    </operation>
+    <operation name="GetPlanOrdersClinicPDG">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetPlanOrdersClinicPDGRequest" message="tns:GetPlanOrdersClinicPDG" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetPlanOrdersClinicPDGResponse" message="tns:GetPlanOrdersClinicPDGResponse" />
+    </operation>
+    <operation name="MakeDeAttachAction">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/MakeDeAttachActionRequest" message="tns:MakeDeAttachAction" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/MakeDeAttachActionResponse" message="tns:MakeDeAttachActionResponse" />
+    </operation>
+    <operation name="GetOrdersLeaveHospitalPDG">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersLeaveHospitalPDGRequest" message="tns:GetOrdersLeaveHospitalPDG" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersLeaveHospitalPDGResponse" message="tns:GetOrdersLeaveHospitalPDGResponse" />
+    </operation>
+    <operation name="SendOrdersHospitalUrgently">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendOrdersHospitalUrgentlyRequest" message="tns:SendOrdersHospitalUrgently" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendOrdersHospitalUrgentlyResponse" message="tns:SendOrdersHospitalUrgentlyResponse" />
+    </operation>
+    <operation name="MakeDeAttachActionCancel">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/MakeDeAttachActionCancelRequest" message="tns:MakeDeAttachActionCancel" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/MakeDeAttachActionCancelResponse" message="tns:MakeDeAttachActionCancelResponse" />
+    </operation>
+    <operation name="GetPlanOrdersClinicLDS">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetPlanOrdersClinicLDSRequest" message="tns:GetPlanOrdersClinicLDS" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetPlanOrdersClinicLDSResponse" message="tns:GetPlanOrdersClinicLDSResponse" />
+    </operation>
+    <operation name="SendKDInformation">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendKDInformationRequest" message="tns:SendKDInformation" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendKDInformationResponse" message="tns:SendKDInformationResponse" />
+    </operation>
+    <operation name="GetKDInformationByMO">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationByMORequest" message="tns:GetKDInformationByMO" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationByMOResponse" message="tns:GetKDInformationByMOResponse" />
+    </operation>
+    <operation name="GetQueryForDeAttachForMO">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetQueryForDeAttachForMORequest" message="tns:GetQueryForDeAttachForMO" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetQueryForDeAttachForMOResponse" message="tns:GetQueryForDeAttachForMOResponse" />
+    </operation>
+    <operation name="GetOrdersLeaveHospitalLDS">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersLeaveHospitalLDSRequest" message="tns:GetOrdersLeaveHospitalLDS" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersLeaveHospitalLDSResponse" message="tns:GetOrdersLeaveHospitalLDSResponse" />
+    </operation>
+    <operation name="GetAttachListByRangeAct">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetAttachListByRangeActRequest" message="tns:GetAttachListByRangeAct" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetAttachListByRangeActResponse" message="tns:GetAttachListByRangeActResponse" />
+    </operation>
+    <operation name="GetAttachListByRangeDead">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetAttachListByRangeDeadRequest" message="tns:GetAttachListByRangeDead" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetAttachListByRangeDeadResponse" message="tns:GetAttachListByRangeDeadResponse" />
+    </operation>
+    <operation name="SendAttachMoStreetSection">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendAttachMoStreetSectionRequest" message="tns:SendAttachMoStreetSection" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendAttachMoStreetSectionResponse" message="tns:SendAttachMoStreetSectionResponse" />
+    </operation>
+    <operation name="GetPlanOrdersClinic">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetPlanOrdersClinicRequest" message="tns:GetPlanOrdersClinic" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetPlanOrdersClinicResponse" message="tns:GetPlanOrdersClinicResponse" />
+    </operation>
+    <operation name="GetOrdersHospitalUrgently">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersHospitalUrgentlyRequest" message="tns:GetOrdersHospitalUrgently" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersHospitalUrgentlyResponse" message="tns:GetOrdersHospitalUrgentlyResponse" />
+    </operation>
+    <operation name="GetKDInformationPDG">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationPDGRequest" message="tns:GetKDInformationPDG" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationPDGResponse" message="tns:GetKDInformationPDGResponse" />
+    </operation>
+    <operation name="GetOrdersHospitalUrgentlyPDG">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersHospitalUrgentlyPDGRequest" message="tns:GetOrdersHospitalUrgentlyPDG" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersHospitalUrgentlyPDGResponse" message="tns:GetOrdersHospitalUrgentlyPDGResponse" />
+    </operation>
+    <operation name="GetAttachInformation">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetAttachInformationRequest" message="tns:GetAttachInformation" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetAttachInformationResponse" message="tns:GetAttachInformationResponse" />
+    </operation>
+    <operation name="GetFactOrdersHospitalPDG">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetFactOrdersHospitalPDGRequest" message="tns:GetFactOrdersHospitalPDG" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetFactOrdersHospitalPDGResponse" message="tns:GetFactOrdersHospitalPDGResponse" />
+    </operation>
+    <operation name="GetAttachMoStreetSection">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetAttachMoStreetSectionRequest" message="tns:GetAttachMoStreetSection" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetAttachMoStreetSectionResponse" message="tns:GetAttachMoStreetSectionResponse" />
+    </operation>
+    <operation name="GetOrdersNullificationPDG">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersNullificationPDGRequest" message="tns:GetOrdersNullificationPDG" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersNullificationPDGResponse" message="tns:GetOrdersNullificationPDGResponse" />
+    </operation>
+    <operation name="GetDeAttachByDate">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetDeAttachByDateRequest" message="tns:GetDeAttachByDate" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetDeAttachByDateResponse" message="tns:GetDeAttachByDateResponse" />
+    </operation>
+    <operation name="GetOrdersLeaveHospital">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersLeaveHospitalRequest" message="tns:GetOrdersLeaveHospital" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersLeaveHospitalResponse" message="tns:GetOrdersLeaveHospitalResponse" />
+    </operation>
+    <operation name="GetKDInformationByKPKMO">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationByKPKMORequest" message="tns:GetKDInformationByKPKMO" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetKDInformationByKPKMOResponse" message="tns:GetKDInformationByKPKMOResponse" />
+    </operation>
+    <operation name="GetOrdersNullificationLDS">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersNullificationLDSRequest" message="tns:GetOrdersNullificationLDS" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersNullificationLDSResponse" message="tns:GetOrdersNullificationLDSResponse" />
+    </operation>
+    <operation name="GetOrdersNullification">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersNullificationRequest" message="tns:GetOrdersNullification" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetOrdersNullificationResponse" message="tns:GetOrdersNullificationResponse" />
+    </operation>
+    <operation name="SendQueryForDeAttachForMO">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendQueryForDeAttachForMORequest" message="tns:SendQueryForDeAttachForMO" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendQueryForDeAttachForMOResponse" message="tns:SendQueryForDeAttachForMOResponse" />
+    </operation>
+    <operation name="GetAttachListByRange">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/GetAttachListByRangeRequest" message="tns:GetAttachListByRange" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/GetAttachListByRangeResponse" message="tns:GetAttachListByRangeResponse" />
+    </operation>
+    <operation name="SendAttachDoctorSectionInformation">
+      <input wsam:Action="http://main.dce/DCExchangeSrv/SendAttachDoctorSectionInformationRequest" message="tns:SendAttachDoctorSectionInformation" />
+      <output wsam:Action="http://main.dce/DCExchangeSrv/SendAttachDoctorSectionInformationResponse" message="tns:SendAttachDoctorSectionInformationResponse" />
+    </operation>
+  </portType>
+  <binding name="DCExchangeSrvPortBinding" type="tns:DCExchangeSrv">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="MakeAttachAction">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvFactInfos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvFactExecs">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvPlanQtys">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvFactInvcs">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="putEvContacts">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="putEvPlanDates">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SetLoginAccess">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="MakeTestConnect">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetKDInformation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendOrdersLeave">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvContacts">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvPlanList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEvPlanDates">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="putEvPlanList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="putEvFactExecs">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="putEvFactInfos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetKDInformationByKpk">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendPlanOrdersClinic">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetFactOrdersHospital">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersHospitalUrgentlyLDS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetFactOrdersHospitalLDS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendFactOrdersHospital">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendOrdersNullification">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendAttachDoctorInformation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetKDInformationLDS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPlanOrdersClinicPDG">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="MakeDeAttachAction">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersLeaveHospitalPDG">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendOrdersHospitalUrgently">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="MakeDeAttachActionCancel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPlanOrdersClinicLDS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendKDInformation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetKDInformationByMO">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetQueryForDeAttachForMO">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersLeaveHospitalLDS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAttachListByRangeAct">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAttachListByRangeDead">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendAttachMoStreetSection">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPlanOrdersClinic">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersHospitalUrgently">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetKDInformationPDG">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersHospitalUrgentlyPDG">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAttachInformation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetFactOrdersHospitalPDG">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAttachMoStreetSection">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersNullificationPDG">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDeAttachByDate">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersLeaveHospital">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetKDInformationByKPKMO">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersNullificationLDS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetOrdersNullification">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendQueryForDeAttachForMO">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAttachListByRange">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SendAttachDoctorSectionInformation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DCExchangeSrv">
+    <port name="DCExchangeSrvPort" binding="tns:DCExchangeSrvPortBinding">
+      <soap:address location="http://10.20.29.2:8888/EchangeServerTFOMS/DCExchangeSrv" />
+    </port>
+  </service>
+</definitions>

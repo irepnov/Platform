@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{29694C0B-7CAC-4683-8DDB-C50535C9C31B}") = "SimPrihodT", "SimPrihodT.csproj", "{D961D80D-249A-490C-9EC7-34063BFA1D84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71319B12-65C0-463A-8BD2-2396D3FC5BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71319B12-65C0-463A-8BD2-2396D3FC5BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71319B12-65C0-463A-8BD2-2396D3FC5BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71319B12-65C0-463A-8BD2-2396D3FC5BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

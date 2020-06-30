@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://main.dce/" targetNamespace="http://main.dce/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="COrderClinicList" type="tns:cOrderClinicList" />
+  <xs:element name="GetAttachInformation" type="tns:GetAttachInformation" />
+  <xs:element name="GetAttachInformationResponse" type="tns:GetAttachInformationResponse" />
+  <xs:element name="GetAttachListByRange" type="tns:GetAttachListByRange" />
+  <xs:element name="GetAttachListByRangeAct" type="tns:GetAttachListByRangeAct" />
+  <xs:element name="GetAttachListByRangeActResponse" type="tns:GetAttachListByRangeActResponse" />
+  <xs:element name="GetAttachListByRangeDead" type="tns:GetAttachListByRangeDead" />
+  <xs:element name="GetAttachListByRangeDeadResponse" type="tns:GetAttachListByRangeDeadResponse" />
+  <xs:element name="GetAttachListByRangeResponse" type="tns:GetAttachListByRangeResponse" />
+  <xs:element name="GetAttachMoStreetSection" type="tns:GetAttachMoStreetSection" />
+  <xs:element name="GetAttachMoStreetSectionResponse" type="tns:GetAttachMoStreetSectionResponse" />
+  <xs:element name="GetDeAttachByDate" type="tns:GetDeAttachByDate" />
+  <xs:element name="GetDeAttachByDateResponse" type="tns:GetDeAttachByDateResponse" />
+  <xs:element name="GetFactOrdersHospital" type="tns:GetFactOrdersHospital" />
+  <xs:element name="GetFactOrdersHospitalLDS" type="tns:GetFactOrdersHospitalLDS" />
+  <xs:element name="GetFactOrdersHospitalLDSResponse" type="tns:GetFactOrdersHospitalLDSResponse" />
+  <xs:element name="GetFactOrdersHospitalPDG" type="tns:GetFactOrdersHospitalPDG" />
+  <xs:element name="GetFactOrdersHospitalPDGResponse" type="tns:GetFactOrdersHospitalPDGResponse" />
+  <xs:element name="GetFactOrdersHospitalResponse" type="tns:GetFactOrdersHospitalResponse" />
+  <xs:element name="GetKDInformation" type="tns:GetKDInformation" />
+  <xs:element name="GetKDInformationByKPKMO" type="tns:GetKDInformationByKPKMO" />
+  <xs:element name="GetKDInformationByKPKMOResponse" type="tns:GetKDInformationByKPKMOResponse" />
+  <xs:element name="GetKDInformationByKpk" type="tns:GetKDInformationByKpk" />
+  <xs:element name="GetKDInformationByKpkResponse" type="tns:GetKDInformationByKpkResponse" />
+  <xs:element name="GetKDInformationByMO" type="tns:GetKDInformationByMO" />
+  <xs:element name="GetKDInformationByMOResponse" type="tns:GetKDInformationByMOResponse" />
+  <xs:element name="GetKDInformationLDS" type="tns:GetKDInformationLDS" />
+  <xs:element name="GetKDInformationLDSResponse" type="tns:GetKDInformationLDSResponse" />
+  <xs:element name="GetKDInformationPDG" type="tns:GetKDInformationPDG" />
+  <xs:element name="GetKDInformationPDGResponse" type="tns:GetKDInformationPDGResponse" />
+  <xs:element name="GetKDInformationResponse" type="tns:GetKDInformationResponse" />
+  <xs:element name="GetOrdersHospitalUrgently" type="tns:GetOrdersHospitalUrgently" />
+  <xs:element name="GetOrdersHospitalUrgentlyLDS" type="tns:GetOrdersHospitalUrgentlyLDS" />
+  <xs:element name="GetOrdersHospitalUrgentlyLDSResponse" type="tns:GetOrdersHospitalUrgentlyLDSResponse" />
+  <xs:element name="GetOrdersHospitalUrgentlyPDG" type="tns:GetOrdersHospitalUrgentlyPDG" />
+  <xs:element name="GetOrdersHospitalUrgentlyPDGResponse" type="tns:GetOrdersHospitalUrgentlyPDGResponse" />
+  <xs:element name="GetOrdersHospitalUrgentlyResponse" type="tns:GetOrdersHospitalUrgentlyResponse" />
+  <xs:element name="GetOrdersLeaveHospital" type="tns:GetOrdersLeaveHospital" />
+  <xs:element name="GetOrdersLeaveHospitalLDS" type="tns:GetOrdersLeaveHospitalLDS" />
+  <xs:element name="GetOrdersLeaveHospitalLDSResponse" type="tns:GetOrdersLeaveHospitalLDSResponse" />
+  <xs:element name="GetOrdersLeaveHospitalPDG" type="tns:GetOrdersLeaveHospitalPDG" />
+  <xs:element name="GetOrdersLeaveHospitalPDGResponse" type="tns:GetOrdersLeaveHospitalPDGResponse" />
+  <xs:element name="GetOrdersLeaveHospitalResponse" type="tns:GetOrdersLeaveHospitalResponse" />
+  <xs:element name="GetOrdersNullification" type="tns:GetOrdersNullification" />
+  <xs:element name="GetOrdersNullificationLDS" type="tns:GetOrdersNullificationLDS" />
+  <xs:element name="GetOrdersNullificationLDSResponse" type="tns:GetOrdersNullificationLDSResponse" />
+  <xs:element name="GetOrdersNullificationPDG" type="tns:GetOrdersNullificationPDG" />
+  <xs:element name="GetOrdersNullificationPDGResponse" type="tns:GetOrdersNullificationPDGResponse" />
+  <xs:element name="GetOrdersNullificationResponse" type="tns:GetOrdersNullificationResponse" />
+  <xs:element name="GetPlanOrdersClinic" type="tns:GetPlanOrdersClinic" />
+  <xs:element name="GetPlanOrdersClinicLDS" type="tns:GetPlanOrdersClinicLDS" />
+  <xs:element name="GetPlanOrdersClinicLDSResponse" type="tns:GetPlanOrdersClinicLDSResponse" />
+  <xs:element name="GetPlanOrdersClinicPDG" type="tns:GetPlanOrdersClinicPDG" />
+  <xs:element name="GetPlanOrdersClinicPDGResponse" type="tns:GetPlanOrdersClinicPDGResponse" />
+  <xs:element name="GetPlanOrdersClinicResponse" type="tns:GetPlanOrdersClinicResponse" />
+  <xs:element name="GetQueryForDeAttachForMO" type="tns:GetQueryForDeAttachForMO" />
+  <xs:element name="GetQueryForDeAttachForMOResponse" type="tns:GetQueryForDeAttachForMOResponse" />
+  <xs:element name="MakeAttachAction" type="tns:MakeAttachAction" />
+  <xs:element name="MakeAttachActionResponse" type="tns:MakeAttachActionResponse" />
+  <xs:element name="MakeDeAttachAction" type="tns:MakeDeAttachAction" />
+  <xs:element name="MakeDeAttachActionCancel" type="tns:MakeDeAttachActionCancel" />
+  <xs:element name="MakeDeAttachActionCancelResponse" type="tns:MakeDeAttachActionCancelResponse" />
+  <xs:element name="MakeDeAttachActionResponse" type="tns:MakeDeAttachActionResponse" />
+  <xs:element name="MakeTestConnect" type="tns:MakeTestConnect" />
+  <xs:element name="MakeTestConnectResponse" type="tns:MakeTestConnectResponse" />
+  <xs:element name="SendAttachDoctorInformation" type="tns:SendAttachDoctorInformation" />
+  <xs:element name="SendAttachDoctorInformationResponse" type="tns:SendAttachDoctorInformationResponse" />
+  <xs:element name="SendAttachDoctorSectionInformation" type="tns:SendAttachDoctorSectionInformation" />
+  <xs:element name="SendAttachDoctorSectionInformationResponse" type="tns:SendAttachDoctorSectionInformationResponse" />
+  <xs:element name="SendAttachMoStreetSection" type="tns:SendAttachMoStreetSection" />
+  <xs:element name="SendAttachMoStreetSectionResponse" type="tns:SendAttachMoStreetSectionResponse" />
+  <xs:element name="SendFactOrdersHospital" type="tns:SendFactOrdersHospital" />
+  <xs:element name="SendFactOrdersHospitalResponse" type="tns:SendFactOrdersHospitalResponse" />
+  <xs:element name="SendKDInformation" type="tns:SendKDInformation" />
+  <xs:element name="SendKDInformationResponse" type="tns:SendKDInformationResponse" />
+  <xs:element name="SendOrdersHospitalUrgently" type="tns:SendOrdersHospitalUrgently" />
+  <xs:element name="SendOrdersHospitalUrgentlyResponse" type="tns:SendOrdersHospitalUrgentlyResponse" />
+  <xs:element name="SendOrdersLeave" type="tns:SendOrdersLeave" />
+  <xs:element name="SendOrdersLeaveResponse" type="tns:SendOrdersLeaveResponse" />
+  <xs:element name="SendOrdersNullification" type="tns:SendOrdersNullification" />
+  <xs:element name="SendOrdersNullificationResponse" type="tns:SendOrdersNullificationResponse" />
+  <xs:element name="SendPlanOrdersClinic" type="tns:SendPlanOrdersClinic" />
+  <xs:element name="SendPlanOrdersClinicResponse" type="tns:SendPlanOrdersClinicResponse" />
+  <xs:element name="SendQueryForDeAttachForMO" type="tns:SendQueryForDeAttachForMO" />
+  <xs:element name="SendQueryForDeAttachForMOResponse" type="tns:SendQueryForDeAttachForMOResponse" />
+  <xs:element name="SetLoginAccess" type="tns:SetLoginAccess" />
+  <xs:element name="SetLoginAccessResponse" type="tns:SetLoginAccessResponse" />
+  <xs:element name="getEvContacts" type="tns:getEvContacts" />
+  <xs:element name="getEvContactsResponse" type="tns:getEvContactsResponse" />
+  <xs:element name="getEvFactExecs" type="tns:getEvFactExecs" />
+  <xs:element name="getEvFactExecsResponse" type="tns:getEvFactExecsResponse" />
+  <xs:element name="getEvFactInfos" type="tns:getEvFactInfos" />
+  <xs:element name="getEvFactInfosResponse" type="tns:getEvFactInfosResponse" />
+  <xs:element name="getEvFactInvcs" type="tns:getEvFactInvcs" />
+  <xs:element name="getEvFactInvcsResponse" type="tns:getEvFactInvcsResponse" />
+  <xs:element name="getEvPlanDates" type="tns:getEvPlanDates" />
+  <xs:element name="getEvPlanDatesResponse" type="tns:getEvPlanDatesResponse" />
+  <xs:element name="getEvPlanList" type="tns:getEvPlanList" />
+  <xs:element name="getEvPlanListResponse" type="tns:getEvPlanListResponse" />
+  <xs:element name="getEvPlanQtys" type="tns:getEvPlanQtys" />
+  <xs:element name="getEvPlanQtysResponse" type="tns:getEvPlanQtysResponse" />
+  <xs:element name="orderpack" nillable="true" type="xs:anyType" />
+  <xs:element name="putEvContacts" type="tns:putEvContacts" />
+  <xs:element name="putEvContactsResponse" type="tns:putEvContactsResponse" />
+  <xs:element name="putEvFactExecs" type="tns:putEvFactExecs" />
+  <xs:element name="putEvFactExecsResponse" type="tns:putEvFactExecsResponse" />
+  <xs:element name="putEvFactInfos" type="tns:putEvFactInfos" />
+  <xs:element name="putEvFactInfosResponse" type="tns:putEvFactInfosResponse" />
+  <xs:element name="putEvPlanDates" type="tns:putEvPlanDates" />
+  <xs:element name="putEvPlanDatesResponse" type="tns:putEvPlanDatesResponse" />
+  <xs:element name="putEvPlanList" type="tns:putEvPlanList" />
+  <xs:element name="putEvPlanListResponse" type="tns:putEvPlanListResponse" />
+  <xs:element name="responcepack" nillable="true" type="xs:anyType" />
+  <xs:complexType name="SendFactOrdersHospital">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderHospitalPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_orderhospitallist" type="tns:cOrderHospitalList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cPackageInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_pakagedate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="p11_pakagesender" type="xs:string" />
+      <xs:element minOccurs="0" name="p12_pakageguid" type="xs:string" />
+      <xs:element name="p13_zerrpkg" type="xs:int" />
+      <xs:element minOccurs="0" name="p14_errmsg" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderHospitalList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cOrderHospital" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderHospital">
+    <xs:sequence>
+      <xs:element name="m10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="m11_ornm" type="xs:string" />
+      <xs:element minOccurs="0" name="m12_ordt" type="xs:dateTime" />
+      <xs:element name="m13_ortp" type="xs:int" />
+      <xs:element minOccurs="0" name="m14_moscd" type="xs:string" />
+      <xs:element minOccurs="0" name="m15_modcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m16_dttmfh" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="m17_pr" type="tns:cPerson" />
+      <xs:element minOccurs="0" name="m18_kpkcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m19_sccd" type="xs:string" />
+      <xs:element minOccurs="0" name="m20_crdnum" type="xs:string" />
+      <xs:element minOccurs="0" name="m21_mkbcd" type="xs:string" />
+      <xs:element name="m22_zerr" type="xs:int" />
+      <xs:element minOccurs="0" name="m24_usok" type="xs:string" />
+      <xs:element minOccurs="0" name="m25_trcd" type="xs:string" />
+      <xs:element minOccurs="0" name="z99_guid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cPerson">
+    <xs:sequence>
+      <xs:element name="a10_dct" type="xs:int" />
+      <xs:element minOccurs="0" name="a11_dcs" type="xs:string" />
+      <xs:element minOccurs="0" name="a12_dcn" type="xs:string" />
+      <xs:element minOccurs="0" name="a13_smcd" type="xs:string" />
+      <xs:element minOccurs="0" name="a14_trcd" type="xs:string" />
+      <xs:element minOccurs="0" name="a15_pfio" type="xs:string" />
+      <xs:element minOccurs="0" name="a16_pnm" type="xs:string" />
+      <xs:element minOccurs="0" name="a17_pln" type="xs:string" />
+      <xs:element minOccurs="0" name="a18_ps" type="xs:string" />
+      <xs:element minOccurs="0" name="a19_pbd" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="a20_pph" type="xs:string" />
+      <xs:element minOccurs="0" name="a21_ps" type="xs:string" />
+      <xs:element minOccurs="0" name="a22_pn" type="xs:string" />
+      <xs:element name="a23_dt" type="xs:int" />
+      <xs:element minOccurs="0" name="a24_sl" type="xs:string" />
+      <xs:element minOccurs="0" name="a25_enp" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendFactOrdersHospitalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cResponceOrdersPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="r10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="r11_rsinf" type="tns:cResponceInformation" />
+      <xs:element minOccurs="0" name="r12_orerl" type="tns:cOrdersErrorList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cResponceInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pakageGUIDSrc" type="xs:string" />
+      <xs:element name="r10_responcecode" type="xs:int" />
+      <xs:element minOccurs="0" name="responceMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrdersErrorList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="f10_orflker" nillable="true" type="tns:cOrdersFLKError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrdersFLKError">
+    <xs:sequence>
+      <xs:element name="f10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="f11_flkerrorList" type="tns:cflkErrorList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cflkErrorList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="f10_flkerror" nillable="true" type="tns:cflkError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cflkError">
+    <xs:sequence>
+      <xs:element name="e10_ecd" type="xs:int" />
+      <xs:element minOccurs="0" name="e11_ems" type="xs:string" />
+      <xs:element minOccurs="0" name="e12_iguid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendQueryForDeAttachForMO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cDeAttachQueryForMOPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDeAttachQueryForMOPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_list" type="tns:cDeAttachQueryForMOList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDeAttachQueryForMOList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="p_10orcl" nillable="true" type="tns:cDeAttachQueryForMORecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDeAttachQueryForMORecord">
+    <xs:sequence>
+      <xs:element name="m01_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="m02_mosrc" type="xs:string" />
+      <xs:element minOccurs="0" name="m03_modes" type="xs:string" />
+      <xs:element minOccurs="0" name="m04_pep" type="tns:cPerson" />
+      <xs:element minOccurs="0" name="m05_nntf" type="xs:string" />
+      <xs:element minOccurs="0" name="m06_dntf" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendQueryForDeAttachForMOResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cResponceAttachPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packrespinf" type="tns:cResponceOrdersPackage" />
+      <xs:element minOccurs="0" name="p11_atachlist" type="tns:cAttachList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cAttach" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttach">
+    <xs:sequence>
+      <xs:element name="p10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="p11_mocd" type="xs:string" />
+      <xs:element minOccurs="0" name="p12_pr" type="tns:cPerson" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="p13_orcl" nillable="true" type="tns:cAttachInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a10_aad" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="a11_snisl" type="xs:string" />
+      <xs:element minOccurs="0" name="a12_sect" type="xs:string" />
+      <xs:element name="a13_attp" type="xs:int" />
+      <xs:element name="a14_pr" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachInformationPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachInformationPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_pr" type="tns:cPerson" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachInformationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersNullification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersNullificationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderNullificationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderNullificationPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_ordernullificationlist" type="tns:cOrderNullificationList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderNullificationList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cOrderNullification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderNullification">
+    <xs:sequence>
+      <xs:element name="m10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="m11_ornm" type="xs:string" />
+      <xs:element minOccurs="0" name="m12_ordt" type="xs:dateTime" />
+      <xs:element name="m13_orstp" type="xs:int" />
+      <xs:element minOccurs="0" name="m14_ornscd" type="xs:string" />
+      <xs:element name="m15_ornrcd" type="xs:int" />
+      <xs:element minOccurs="0" name="m16_ornld" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="m17_dtph" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="m18_lpucode" type="xs:string" />
+      <xs:element minOccurs="0" name="m19_kpkcd" type="xs:string" />
+      <xs:element name="m20_zerr" type="xs:int" />
+      <xs:element minOccurs="0" name="z99_guid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDeAttachByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="controldate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetDeAttachByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cDeAttachPersonPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDeAttachPersonPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_deatachlist" type="tns:cDeAttachList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDeAttachList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cDeAttach" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDeAttach">
+    <xs:sequence>
+      <xs:element name="p10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="p11_pr" type="tns:cPerson" />
+      <xs:element minOccurs="0" name="p12_sect" type="xs:string" />
+      <xs:element minOccurs="0" name="p13_add" type="xs:dateTime" />
+      <xs:element name="p14_adr" type="xs:int" />
+      <xs:element minOccurs="0" name="p15_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="p16_f" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachListByRangeDead">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element name="startid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachListByRangeDeadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachPersonListPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachPersonListPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element name="p11_nid" type="xs:int" />
+      <xs:element minOccurs="0" name="p12_alist" type="tns:cAttachPersonList" />
+      <xs:element name="p12_all" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachPersonList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cAttachPerson" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachPerson">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a01" type="xs:string" />
+      <xs:element minOccurs="0" name="a02" type="xs:string" />
+      <xs:element minOccurs="0" name="a03" type="xs:string" />
+      <xs:element minOccurs="0" name="a04" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="a05" type="xs:string" />
+      <xs:element minOccurs="0" name="a06" type="xs:string" />
+      <xs:element minOccurs="0" name="a07" type="xs:string" />
+      <xs:element minOccurs="0" name="a08" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="a09" nillable="true" type="tns:cAttachMO" />
+      <xs:element minOccurs="0" name="a10" type="xs:string" />
+      <xs:element name="a11" type="xs:int" />
+      <xs:element minOccurs="0" name="a12_r" type="xs:string" />
+      <xs:element minOccurs="0" name="a13_c" type="xs:string" />
+      <xs:element minOccurs="0" name="a14_n" type="xs:string" />
+      <xs:element minOccurs="0" name="a15_u" type="xs:string" />
+      <xs:element minOccurs="0" name="a16_d" type="xs:string" />
+      <xs:element minOccurs="0" name="a17_k" type="xs:string" />
+      <xs:element minOccurs="0" name="a18_k" type="xs:string" />
+      <xs:element minOccurs="0" name="a19_pr" type="xs:string" />
+      <xs:element minOccurs="0" name="a20_pc" type="xs:string" />
+      <xs:element minOccurs="0" name="a21_pn" type="xs:string" />
+      <xs:element minOccurs="0" name="a22_pu" type="xs:string" />
+      <xs:element minOccurs="0" name="a23_pd" type="xs:string" />
+      <xs:element minOccurs="0" name="a24_pk" type="xs:string" />
+      <xs:element minOccurs="0" name="a25_pk" type="xs:string" />
+      <xs:element name="a26_hp" type="xs:int" />
+      <xs:element minOccurs="0" name="a27" type="xs:string" />
+      <xs:element minOccurs="0" name="a28" type="xs:string" />
+      <xs:element minOccurs="0" name="a29" type="xs:string" />
+      <xs:element minOccurs="0" name="a30" type="xs:string" />
+      <xs:element minOccurs="0" name="a31" type="xs:string" />
+      <xs:element minOccurs="0" name="a32" type="xs:string" />
+      <xs:element minOccurs="0" name="a33" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachMO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="i1" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="i2" type="xs:string" />
+      <xs:element minOccurs="0" name="i3" type="xs:string" />
+      <xs:element minOccurs="0" name="i4" type="xs:string" />
+      <xs:element name="i5" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvFactExecs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="code_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="execdate" type="xs:dateTime" />
+      <xs:element name="page" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvFactExecsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevFactExecsPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactExecsPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="evFactExecs" type="tns:cevFactExecs" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactExecs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="evFactExec" nillable="true" type="tns:cevFactExec" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactExec">
+    <xs:sequence>
+      <xs:element name="rid" type="xs:int" />
+      <xs:element minOccurs="0" name="code_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="execdate" type="xs:dateTime" />
+      <xs:element name="execstep" type="xs:int" />
+      <xs:element name="execmeth" type="xs:int" />
+      <xs:element minOccurs="0" name="person" type="tns:cPerson" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetQueryForDeAttachForMO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="synhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetQueryForDeAttachForMOResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cDeAttachQueryForMOPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersHospitalUrgently">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersHospitalUrgentlyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalUrgentlyPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderHospitalUrgentlyPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_orderhospitalurgentlylist" type="tns:cOrderHospitalUrgentlyList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderHospitalUrgentlyList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cOrderHospitalUrgently" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderHospitalUrgently">
+    <xs:sequence>
+      <xs:element name="m10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="m11_modcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m12_dttmfh" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="m13_pr" type="tns:cPerson" />
+      <xs:element minOccurs="0" name="m14_kpkcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m15_sccd" type="xs:string" />
+      <xs:element minOccurs="0" name="m16_crdnum" type="xs:string" />
+      <xs:element minOccurs="0" name="m17_mkbcd" type="xs:string" />
+      <xs:element name="m18_zerr" type="xs:int" />
+      <xs:element minOccurs="0" name="z99_guid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendOrdersHospitalUrgently">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalUrgentlyPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendOrdersHospitalUrgentlyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvPlanQtys">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element name="year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvPlanQtysResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevPlanQtysPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanQtysPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="evPlanQtys" type="tns:cevPlanQtys" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanQtys">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="evPlanQuantity" nillable="true" type="tns:cevPlanQuantity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanQuantity">
+    <xs:sequence>
+      <xs:element name="rid" type="xs:int" />
+      <xs:element name="kind" type="xs:int" />
+      <xs:element name="kind2" type="xs:int" />
+      <xs:element name="year" type="xs:int" />
+      <xs:element name="mnth" type="xs:int" />
+      <xs:element minOccurs="0" name="code_mo" type="xs:string" />
+      <xs:element name="quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersNullificationPDG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersNullificationPDGResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderNullificationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersLeaveHospitalLDS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersLeaveHospitalLDSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderLeaveHospitalPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderLeaveHospitalPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_orderleavehospitallist" type="tns:cOrderLeaveHospitalList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderLeaveHospitalList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cOrderLeaveHospital" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderLeaveHospital">
+    <xs:sequence>
+      <xs:element name="m10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="m11_ornm" type="xs:string" />
+      <xs:element minOccurs="0" name="m12_ordt" type="xs:dateTime" />
+      <xs:element name="m13_ortp" type="xs:int" />
+      <xs:element minOccurs="0" name="m14_modcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m15_dttmfh" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="m16_dttmlv" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="m17_pr" type="tns:cPerson" />
+      <xs:element minOccurs="0" name="m18_kpkcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m19_sccd" type="xs:string" />
+      <xs:element minOccurs="0" name="m20_crdnum" type="xs:string" />
+      <xs:element name="m21_zerr" type="xs:int" />
+      <xs:element minOccurs="0" name="z99_guid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:ckdInformationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ckdInformationPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_kdInformationlist" type="tns:ckdInformationList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ckdInformationList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:ckdInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ckdInformation">
+    <xs:sequence>
+      <xs:element name="m10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="m11_indt" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="m12_mocd" type="xs:string" />
+      <xs:element minOccurs="0" name="m13_bprlist" type="tns:cBedProfileList" />
+      <xs:element name="m14_zerr" type="xs:int" />
+      <xs:element minOccurs="0" name="m15_usok" type="xs:string" />
+      <xs:element minOccurs="0" name="z99_guid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cBedProfileList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="s10_bpr" nillable="true" type="tns:cBedProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cBedProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="k10_kpkcd" type="xs:string" />
+      <xs:element name="k11_cntcn" type="xs:int" />
+      <xs:element name="k12_cnten" type="xs:int" />
+      <xs:element name="k13_cntlv" type="xs:int" />
+      <xs:element name="k14_cntpl" type="xs:int" />
+      <xs:element name="k15_cntfrmn" type="xs:int" />
+      <xs:element name="k16_cntfrwm" type="xs:int" />
+      <xs:element name="k17_cntfrch" type="xs:int" />
+      <xs:element minOccurs="0" name="k18_vkdlist" type="tns:cVolumeKDSMOList" />
+      <xs:element minOccurs="0" name="k19_iguid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cVolumeKDSMOList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="n10_vkd" nillable="true" type="tns:cVolumeKDSMO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cVolumeKDSMO">
+    <xs:sequence>
+      <xs:element name="k10_vtp" type="xs:int" />
+      <xs:element minOccurs="0" name="k11_smcd" type="xs:string" />
+      <xs:element name="k12_vkd" type="xs:int" />
+      <xs:element minOccurs="0" name="k13_iguid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersNullificationLDS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersNullificationLDSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderNullificationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationByKpk">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="kpkcode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationByKpkResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:ckdInformationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetFactOrdersHospitalPDG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetFactOrdersHospitalPDGResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvPlanDates">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvPlanDatesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevPlanDatesPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanDatesPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="evPlanDates" type="tns:cevPlanDates" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanDates">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="evPlanDate" nillable="true" type="tns:cevPlanDate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanDate">
+    <xs:sequence>
+      <xs:element name="rid" type="xs:int" />
+      <xs:element minOccurs="0" name="code_mo" type="xs:string" />
+      <xs:element name="kind" type="xs:int" />
+      <xs:element minOccurs="0" name="evdt" type="xs:dateTime" />
+      <xs:element name="meth" type="xs:int" />
+      <xs:element minOccurs="0" name="comment" type="xs:string" />
+      <xs:element minOccurs="0" name="address" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationLDS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationLDSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:ckdInformationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvFactExecs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevFactExecsPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvFactExecsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersHospitalUrgentlyPDG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersHospitalUrgentlyPDGResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalUrgentlyPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendOrdersLeave">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderLeaveHospitalPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendOrdersLeaveResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersLeaveHospital">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersLeaveHospitalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderLeaveHospitalPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetFactOrdersHospitalLDS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetFactOrdersHospitalLDSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvContacts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvContactsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevContactsPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevContactsPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="evContacts" type="tns:cevContacts" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevContacts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="evContact" nillable="true" type="tns:cevContact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevContact">
+    <xs:sequence>
+      <xs:element name="rid" type="xs:int" />
+      <xs:element minOccurs="0" name="code_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="phone" type="xs:string" />
+      <xs:element minOccurs="0" name="comment" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationPDG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationPDGResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:ckdInformationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersHospitalUrgentlyLDS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersHospitalUrgentlyLDSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalUrgentlyPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendOrdersNullification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderNullificationPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendOrdersNullificationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvPlanList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element name="year" type="xs:int" />
+      <xs:element name="mnth" type="xs:int" />
+      <xs:element name="page" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvPlanListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevPlanListPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanListPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="evPlanList" type="tns:cevPlanList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlanList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="evPlan" nillable="true" type="tns:cevPlan" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevPlan">
+    <xs:sequence>
+      <xs:element name="rid" type="xs:int" />
+      <xs:element name="kind" type="xs:int" />
+      <xs:element name="year" type="xs:int" />
+      <xs:element name="mnth" type="xs:int" />
+      <xs:element name="code_mo" type="xs:string" />
+      <xs:element name="dfSection" type="xs:string" />
+      <xs:element name="category" type="xs:int" />
+      <xs:element minOccurs="0" name="mkbx" type="xs:string" />
+      <xs:element minOccurs="0" name="mkbxdate" type="xs:dateTime" />
+      <xs:element name="mkbxstts" type="xs:int" />
+      <xs:element name="mkbxmeth" type="xs:int" />
+      <xs:element minOccurs="0" name="doc_ss" type="xs:string" />
+      <xs:element name="opcode" type="xs:int" />
+      <xs:element name="person" type="tns:cPerson" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MakeDeAttachAction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cDeAttachPersonPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MakeDeAttachActionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPlanOrdersClinicPDG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPlanOrdersClinicPDGResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderClinicPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderClinicPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_ordercliniclist" type="tns:cOrderClinicList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderClinicList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cOrderClinic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cOrderClinic">
+    <xs:sequence>
+      <xs:element name="m10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="m11_ornm" type="xs:string" />
+      <xs:element minOccurs="0" name="m12_ordt" type="xs:dateTime" />
+      <xs:element name="m13_ortp" type="xs:int" />
+      <xs:element minOccurs="0" name="m14_moscd" type="xs:string" />
+      <xs:element minOccurs="0" name="m15_modcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m16_pr" type="tns:cPerson" />
+      <xs:element minOccurs="0" name="m18_mkbcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m19_kpkcd" type="xs:string" />
+      <xs:element minOccurs="0" name="m20_sccd" type="xs:string" />
+      <xs:element minOccurs="0" name="m21_dcnm" type="xs:string" />
+      <xs:element minOccurs="0" name="m22_dtph" type="xs:dateTime" />
+      <xs:element name="m23_zerr" type="xs:int" />
+      <xs:element minOccurs="0" name="m24_usok" type="xs:string" />
+      <xs:element minOccurs="0" name="m25_trcd" type="xs:string" />
+      <xs:element minOccurs="0" name="z99_guid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationByKPKMO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="mocode" type="xs:string" />
+      <xs:element minOccurs="0" name="kpkcode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationByKPKMOResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:ckdInformationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPlanOrdersClinicLDS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPlanOrdersClinicLDSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderClinicPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SetLoginAccess">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="oldpassword" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SetLoginAccessResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendAttachDoctorInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachDoctorPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachDoctorPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_doclist" type="tns:cDoctorList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDoctorList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cDoctor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cDoctor">
+    <xs:sequence>
+      <xs:element name="d10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="d11_snils" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="d12_orcl" nillable="true" type="tns:cAttachMODoctor" />
+      <xs:element minOccurs="0" name="d13_sr" type="xs:string" />
+      <xs:element minOccurs="0" name="d14_nm" type="xs:string" />
+      <xs:element minOccurs="0" name="d15_ln" type="xs:string" />
+      <xs:element minOccurs="0" name="d16_br" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="d17_dn" type="xs:dateTime" />
+      <xs:element name="d18_drg" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachMODoctor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="m10_mocd" type="xs:string" />
+      <xs:element minOccurs="0" name="m11_dn" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendAttachDoctorInformationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvPlanDates">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevPlanDatesPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvPlanDatesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvFactInfos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="smo_code" type="xs:string" />
+      <xs:element minOccurs="0" name="infodate" type="xs:dateTime" />
+      <xs:element name="page" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvFactInfosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevFactInfosPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactInfosPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="evFactInfos" type="tns:cevFactInfos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactInfos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="evFactInfo" nillable="true" type="tns:cevFactInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactInfo">
+    <xs:sequence>
+      <xs:element name="rid" type="xs:int" />
+      <xs:element minOccurs="0" name="smo_code" type="xs:string" />
+      <xs:element minOccurs="0" name="code_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="infodate" type="xs:dateTime" />
+      <xs:element name="infometh" type="xs:int" />
+      <xs:element name="infostep" type="xs:int" />
+      <xs:element name="inforslt" type="xs:int" />
+      <xs:element minOccurs="0" name="person" type="tns:cPerson" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendKDInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:ckdInformationPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendKDInformationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersLeaveHospitalPDG">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastsynhdate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetOrdersLeaveHospitalPDGResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderLeaveHospitalPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetFactOrdersHospital">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetFactOrdersHospitalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderHospitalPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MakeDeAttachActionCancel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachPersonPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachPersonPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_atachlist" type="tns:cAttachList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MakeDeAttachActionCancelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvFactInvcs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element name="year" type="xs:int" />
+      <xs:element name="mnth" type="xs:int" />
+      <xs:element name="page" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEvFactInvcsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevFactInvcsPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactInvcsPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="evFactInvcs" type="tns:cevFactInvcs" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactInvcs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="evFactInvc" nillable="true" type="tns:cevFactInvc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cevFactInvc">
+    <xs:sequence>
+      <xs:element name="rid" type="xs:int" />
+      <xs:element name="year" type="xs:int" />
+      <xs:element name="mnth" type="xs:int" />
+      <xs:element minOccurs="0" name="code_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="smo_code" type="xs:string" />
+      <xs:element minOccurs="0" name="invcdatn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="invcdato" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="invcdate" type="xs:dateTime" />
+      <xs:element name="invcstts" type="xs:int" />
+      <xs:element minOccurs="0" name="ishob" type="xs:string" />
+      <xs:element minOccurs="0" name="q_g" type="xs:string" />
+      <xs:element minOccurs="0" name="mkbx" type="xs:string" />
+      <xs:element minOccurs="0" name="pr_d_n" type="xs:string" />
+      <xs:element minOccurs="0" name="mkbxs" type="xs:string" />
+      <xs:element minOccurs="0" name="pr_ds_n" type="xs:string" />
+      <xs:element minOccurs="0" name="person" type="tns:cPerson" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendPlanOrdersClinic">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderClinicPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendPlanOrdersClinicResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPlanOrdersClinic">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetPlanOrdersClinicResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cOrderClinicPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendAttachDoctorSectionInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachDoctorSectionPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachDoctorSectionPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_mocd" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="p12_orcl" nillable="true" type="tns:cAttachDoctorSection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachDoctorSection">
+    <xs:sequence>
+      <xs:element name="d10_nzap" type="xs:int" />
+      <xs:element minOccurs="0" name="d11_snils" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="d12_orcl" nillable="true" type="tns:cAttachMOSection" />
+      <xs:element minOccurs="0" name="d13_dn" type="xs:dateTime" />
+      <xs:element name="d14_st" type="xs:int" />
+      <xs:element minOccurs="0" name="d15_mo" type="xs:string" />
+      <xs:element minOccurs="0" name="d16_sr" type="xs:string" />
+      <xs:element minOccurs="0" name="d17_nm" type="xs:string" />
+      <xs:element minOccurs="0" name="d18_ln" type="xs:string" />
+      <xs:element minOccurs="0" name="d19_br" type="xs:dateTime" />
+      <xs:element name="d20_ds" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachMOSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="s10_sect" type="xs:string" />
+      <xs:element minOccurs="0" name="s11_dn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="s12_snum" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendAttachDoctorSectionInformationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MakeAttachAction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachPersonPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MakeAttachActionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachListByRange">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element name="startid" type="xs:int" />
+      <xs:element name="isadres" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachListByRangeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachPersonListPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendAttachMoStreetSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachMoStreetSectionPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachMoStreetSectionPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="p10_packinf" type="tns:cPackageInformation" />
+      <xs:element minOccurs="0" name="p11_atachmoscstlist" type="tns:cAttachMoStreetSectionList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachMoStreetSectionList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="l10_orcl" nillable="true" type="tns:cAttachMoStreetSection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachMoStreetSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a10_mocd" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="a11_orcl" nillable="true" type="tns:cAttachMoSectionStreet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachMoSectionStreet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="c10_sect" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="c11_orcl" nillable="true" type="tns:cAttachSectionStreet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cAttachSectionStreet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a10_hguid" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendAttachMoStreetSectionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cResponceAttachPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationByMO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element minOccurs="0" name="mocode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetKDInformationByMOResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:ckdInformationPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachListByRangeAct">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+      <xs:element name="startid" type="xs:int" />
+      <xs:element name="monthact" type="xs:int" />
+      <xs:element name="yearact" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachListByRangeActResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachPersonListPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvFactInfos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevFactInfosPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvFactInfosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvPlanList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevPlanListPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvPlanListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvContacts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cevContactsPackage" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="putEvContactsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responcepack" type="tns:cResponceOrdersPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MakeTestConnect">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="MakeTestConnectResponse">
+    <xs:sequence>
+      <xs:element name="retresult" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachMoStreetSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="sendercode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAttachMoStreetSectionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="orderpack" type="tns:cAttachMoStreetSectionPackage" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
